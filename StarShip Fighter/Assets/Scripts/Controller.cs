@@ -10,6 +10,7 @@ public class Controller : NetworkBehaviour
     private Vector2 lastDir;
 
     private bool scaleUp;
+    private float latency;
     
     private void Awake()
     {
@@ -24,7 +25,11 @@ public class Controller : NetworkBehaviour
     private void Update()
     {
         Move();
-        if(Input.GetKeyDown(KeyCode.S))ScaleMasterRPC();
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            latency = Time.time;
+            ScaleMasterRPC();
+        }
     }
 
     void Move()
@@ -43,6 +48,8 @@ public class Controller : NetworkBehaviour
     [ObserversRpc]
     void ScaleRPC()
     {
+        latency = Time.time - latency;
+        Debug.Log($"Latency: {latency*100} ms");
         if (!scaleUp)
         {
             transform.localScale *= 2;
