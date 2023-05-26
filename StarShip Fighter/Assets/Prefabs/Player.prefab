@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5974526815780655589}
   - component: {fileID: 5278249493113700225}
   - component: {fileID: 1690832802313335163}
-  - component: {fileID: 3772551782830750263}
+  - component: {fileID: 2573638306835258901}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -127,7 +127,6 @@ MonoBehaviour:
   <PredictedSpawn>k__BackingField: {fileID: 0}
   _networkBehaviours:
   - {fileID: 1690832802313335163}
-  - {fileID: 3772551782830750263}
   <ParentNetworkObject>k__BackingField: {fileID: 0}
   <ChildNetworkObjects>k__BackingField: []
   _isNetworked: 1
@@ -135,7 +134,7 @@ MonoBehaviour:
   _initializeOrder: 0
   _defaultDespawnType: 0
   NetworkObserver: {fileID: 0}
-  <PrefabId>k__BackingField: 5
+  <PrefabId>k__BackingField: 4
   <SpawnableCollectionId>k__BackingField: 0
   _scenePathHash: 0
   <SceneId>k__BackingField: 0
@@ -149,7 +148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4137995935108188820}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3197f3a3526e29241a12c391cc9e7da4, type: 3}
   m_Name: 
@@ -158,7 +157,7 @@ MonoBehaviour:
   _addedNetworkObject: {fileID: 5278249493113700225}
   _networkObjectCache: {fileID: 5278249493113700225}
   speed: 5
---- !u!114 &3772551782830750263
+--- !u!114 &2573638306835258901
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,36 +166,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4137995935108188820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2836e36774ca1c4bbbee976e17b649c, type: 3}
+  m_Script: {fileID: 11500000, guid: b6b98f8db31048939f0aa2a88a8a9558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _componentIndexCache: 1
+  _componentIndexCache: 255
   _addedNetworkObject: {fileID: 5278249493113700225}
-  _networkObjectCache: {fileID: 5278249493113700225}
-  _componentConfiguration: 0
-  _synchronizeParent: 0
-  _packing:
-    Position: 1
-    Rotation: 1
-    Scale: 0
-  _interpolation: 2
-  _extrapolation: 2
-  _enableTeleport: 0
-  _teleportThreshold: 1
-  _clientAuthoritative: 1
-  _sendToOwner: 1
-  _synchronizePosition: 1
-  _positionSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeRotation: 1
-  _rotationSnapping:
-    X: 0
-    Y: 0
-    Z: 0
-  _synchronizeScale: 1
-  _scaleSnapping:
-    X: 0
-    Y: 0
-    Z: 0
+  _networkObjectCache: {fileID: 0}
+  speed: 5
